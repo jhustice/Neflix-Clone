@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: rgb(229, 9, 20);
+    color: #fff;
+    padding: 0 1rem;
+    font-size: 26px;
+    display: inline-block;
+    border-radius: 0 3px 3px 0;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 13);
+    cursor: pointer;
+}
+
+/* Utilities */
+.btn {
+    background-color: rgb(229, 9, 20);
+    color: #fff;
+    padding: 7px 17px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.container {
+    padding: 70px 45px;
+}
+
+/* Hero */
+.hero {
+    background: url('/img/netflix-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    border-bottom: rgb(34, 34, 34) 8px solid;
+}
+
+.hero .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 3rem;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70%;
+    padding: 0 20px;
+}
+
+.hero .content h1 {
+    font-size: 50px;
+    margin-bottom: 1.8rem;
+}
+
+.hero .content h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+}
+
+.hero .content h3 {
+    font-size: 19.2px;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero * {
+    z-index: 10;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.5rem;
+}
+
+.form {
+    padding: 1rem 1rem;
+    height: 60px;
+    width: 500px;
+    font-size: 1rem;
+}
+
+/* Section A */
+.section-a {
+    background-color: #000;
+    color: #fff;
+    border-bottom: rgb(34, 34, 34) 8px solid;
+}
+
+.section-a-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.section-a-content .a-text {
+    margin-top: 7rem;
+    margin-left: 7rem;
+}
+
+.section-a-content .a-text h1 {
+    font-size: 55px;
+    margin-bottom: 1.5rem;
+}
+
+.section-a-content .a-text p {
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+/* Section B */
+.section-b {
+    background-color: #000;
+    color: #fff;
+    border-bottom: rgb(34, 34, 34) 8px solid;
+}
+
+.section-b-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.section-b-content .b-text {
+    margin-top: 7rem;
+    margin-right: 2rem;
+}
+
+.section-b-content .b-text h1 {
+    font-size: 55px;
+    margin-bottom: 1.5rem;
+}
+
+.section-b-content .b-text p {
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+/* Section C */
+.section-c {
+    background-color: #000;
+    color: #fff;
+    border-bottom: rgb(34, 34, 34) 8px solid;
+}
+
+.section-c-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.section-c-content .c-text {
+    margin-left: 2rem;
+}
+
+.section-c-content .c-text h1 {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.section-c-content .c-text p {
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+/* Section D */
+.section-d {
+    background-color: #000;
+    color: #fff;
+    border-bottom: rgb(34, 34, 34) 8px solid;
+}
+
+.section-d-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.section-d-content .d-text {
+    margin-top: 7rem;
+    margin-left: 7rem;
+}
+
+.section-d-content .d-text h1 {
+    font-size: 55px;
+    margin-bottom: 1.5rem;
+}
+
+.section-d-content .d-text p {
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+/* Section E */
+.section-e {
+    background-color: #000;
+    color: #fff;
+    border-bottom: rgb(34, 34, 34) 8px solid;
+}
+
+.section-e-content h1 {
+    font-size: 55px;
+    text-align: center;
+}
+
+.section-e-content ul {
+    text-align: center;
+    padding: 0 13rem;
+    margin-top: 5rem;
+}
+
+.section-e-content ul li {
+    font-size: 26px;
+}
+
+.section-e-content ul li:first-child {
+    padding: 1.5rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .55rem;
+}
+
+.section-e-content ul li:nth-child(2) {
+    padding: 1.5rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .55rem;
+}
+
+.section-e-content ul li:nth-child(3) {
+    padding: 1.5rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .55rem;
+}
+
+.section-e-content ul li:nth-child(4) {
+    padding: 1.5rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .55rem;
+}
+
+.section-e-content ul li:nth-child(5) {
+    padding: 1.5rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .55rem;
+}
+
+.section-e-content ul li:last-child {
+    padding: 1.5rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .55rem;
+}
+
+.section-e-text {
+    text-align: center;
+}
+
+.section-e-text form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-e-text h3 {
+    font-size: 19.2px;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 1.8rem;
+}
+
+
+/* .section-e-text .form {
+    padding:1rem 1rem;
+    height: 70px;
+    font-size: 2rem;
+} */
+
+/* Footer */
+.main-footer {
+    background: #000;
+}
+
+.main-footer .footer-child {
+    margin-left: 13rem;
+}
+
+.main-footer .container:last-child {
+    color: #757575;
+}
+
+.main-footer a {
+    color: #757575;
+}
+
+.main-footer a:hover {
+    border-bottom: 1px solid #757575;
+}
+
+.main-footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-left: 6rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0 7rem;
+}
+
+.main-footer-content ul li {
+    font-size: 13px;
+    padding: .5rem 0;
+}
