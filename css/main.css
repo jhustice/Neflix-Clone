@@ -50,7 +50,6 @@ button:hover {
 }
 
 .container {
-    max-width: 1200px;
     padding: 70px 45px;
 }
 
@@ -369,6 +368,10 @@ form {
 
 
 @media(max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     form {
         display: flex;
         flex-direction: column;
@@ -540,6 +543,10 @@ form {
     form {
         display: flex;
         flex-direction: column;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
     .form {
